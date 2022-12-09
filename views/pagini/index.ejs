@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!-- 1 -->
+<html lang="ro"> <!-- /1 -->
+    <head>
+        <!-- 2 -->
+        <title>NewVision</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="ochelari,rame,lentile, lentile de contact, vedere"><!---->
+        <meta name="description" content="Magazin online ochelari de vedere, lentile de contact si ochelari de soare la cele mai mici preturi. Ochelari de firma, produse originale si de calitate."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <%-include("../fragmente/head.ejs") %>
+    </head>
+    <body>
+        <%-include("../fragmente/header.ejs") %>
+        
+        <main>
+            <div id="grid-pagina">
+                <div id="chestie-1">
+                <!-- 8-->   
+                <img src="resurse/imagini/Glasses.png" alt="ochelari"> 
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <% for (let imag of locals.imagini) {
+                    var d=new Date();
+                    var h=d.getMinutes();
+                    if(h<15){
+                        var sfert_ora = "1";
+                    } else if (h<30 && h>=15) {
+                        var sfert_ora = "2";
+                    } else if (h<45 && h>=30){
+                        var sfert_ora = "3";
+                    } else if (h<60 && h>=45){
+                        var sfert_ora = "4";
+                    }
+                    if(imag.sfert_ora && imag.sfert_ora.includes(sfert_ora)){ %>
+                        <figure>
+                        <picture>
+                            <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)"/>
+                            <img src="<%- imag.fisier %>" alt="imagine">
+                        </picture>
+                        <figcaption><%- imag.descriere %></figcaption>
+                    </figure>
+                <% } %>
+                <% } %>
+                </div>
+                </div>
+                <div id="chestie-2">
+                    <h1 >New Vision</h1>
+                    <h2>Unde ne gasiti?</h2>
+                    
+                    <p>IP : <%- locals.ip %></p>
+                    <div id="rotund">
+                    <table id="tabel">
+                        <colgroup>
+                            <col class="col1">
+                            <col class="col2">
+                            <col class="col1">
+                            <col class="col2">
+                            <col class="col1">
+                          </colgroup>
+                        <caption>~Locatile noastre~</caption>
+                        <thead>
+                        <tr>
+                         <th>Oras</th>
+                         <th>Adresa</th>
+                         <th colspan="2">Program</th>
+                         <th>Contact</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td scope="row">Bucuresti</td>
+                          <td>Strada Vederii nr. 3</td>
+                          <td>Luni-Vineri</td>
+                          <td>10:00-21:00</td>
+                          <td>0722 432 122</td>
+                         
+                        </tr>
+                        <tr >
+                         <td scope="row">Bucuresti</td>
+                         <td>Srada Mugurilor nr. 10</td>
+                         <td>Luni-Vineri</td>
+                         <td>10:00-21:00</td>
+                         <td>0723 531 192</td>
+                        </tr>
+                        <tr>
+                         <td scope="row">Cluj-Napoca</td>
+                         <td>Calea Mosilor nr. 79</td>
+                         <td>Luni-Vineri</td>
+                         <td>10:00-21:00</td>
+                         <td>0762 492 122</td>
+                           </tr>
+                        </tbody>
+                        <tfoot>
+                         <tr>
+                          <th scope="row">Total locatii</th>
+                          <td colspan="4">3 + magazinul online in care te afli chiar acum</td>
+                        </tr>
+                        </tfoot>
+                       </table>
+                    </div>
+                </div>
+                <div id="chestie-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
+                </div>
+                <!-- /6-->
+                <div id="chestie-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
+                </div>
+                <div id="chestie-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
+                
+                </div>
+                <div id="chestie-8">
+                    
+                    <div class="taburi-iframe">
+                    <div class="buton-iframe">
+                    <a target="ifr-video" href="https://www.youtube.com/embed/XO5phda0gXM">Ochelari 1</a>
+                    <a target="ifr-video" href="https://www.youtube.com/embed/XO5phda0gXM">Ochelari 2</a>
+                    </div>
+                    <iframe name="ifr-video" width="560px" height="315px" frameborder=0 vspace=0 hspace=0 marginwidth=0 marginheight=0 scrolling="auto" src="https://www.youtube.com/embed/itf314aHMS0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    </div>
+                    <div id="clip-video" > 
+                        <video controls preload="none" width="560px" height="315px" poster="resurse/ico/android-chrome-512x512.png">
+                            <source src="resurse/video/Hacker_glasses.mp4" type="video/mp4">
+                            <source src="resurse/video/Hacker_glasses.ogv" type="video/ogv">
+                            <track default src="aWF1IG8gcGF1emENCg0KMDA6MTQuNTAwIC0tPiAwMDoxOC4wMDAgbGluZTowDQpOVSwg29kdWwgZSBtYWkgaW1wb3J0YW50ISENCg0KDQo=" kind="captions" srclang="ro" label="romana" />
+                            <track  src="" kind="captions" srclang="en" label="engleza"/>
+                          </video>
+                    </div>
+                    <div id="galerie-statica">
+                        
+                    </div>
+                    </div>
+                <div id="chestie-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
+                </div>
+                <div id="chestie-7">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sit repudiandae, rem est tenetur, dignissimos libero tempora ea totam suscipit doloribus, distinctio asperiores nostrum. Optio velit architecto fuga quod, quidem ipsam eaque facere porro similique vero aut. Ex similique, fuga, molestiae quo pariatur vitae sit tempore quia modi illum assumenda.</p>
+                </div>
+            </div>
+        </main>
+        <div id="link">
+            <div id="triunghi"><a href="#">&#5123</a></div>
+            <div id="text">Link top</div>
+        </div>
+        <%-include("../fragmente/footer.ejs") %>
+
+    </body>
+</html>
+       

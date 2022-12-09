@@ -1,0 +1,162 @@
+#hamburger{
+    display:block;
+    height:var(--inaltime-meniu);
+}
+
+ #hamburger img{
+   position: relative;
+    height:100%;
+    width:auto;
+    
+ }
+ 
+
+
+#ch-menu:checked~ul.meniu ul li {
+
+   z-index: 10;
+
+   position: relative;
+
+}
+
+ul.meniu>li:hover ul {
+
+   animation: none;
+
+}
+
+ul.meniu li {
+
+   width: 100% !important;
+
+}
+
+ul.meniu ul {
+
+   width: 100%;
+   height: auto;
+
+}
+
+#li-acasa div:nth-child(2){
+
+   display: none;
+
+}
+
+#li-acasa{
+
+   background-color: var(--culoare-meniu);
+
+}
+
+nav>ul.meniu{
+
+   background-color: var(--culoare-meniu);
+
+
+
+   mask-image: linear-gradient(black 50%, transparent); /*de la jumatate va fi transparent*/
+
+   -webkit-mask-image: linear-gradient(black 50%, transparent); 
+
+
+
+   mask-size: 100% 200%;/* width + height*/
+
+   -webkit-mask-size: 100% 200%;
+
+
+
+   animation-name: animatie-gradient;
+
+   -webkit-animation-name: animatie-gradient;
+
+
+
+   animation-iteration-count: 1;
+
+   -webkit-animation-iteration-count: 1;
+
+
+
+   animation-fill-mode: forwards;
+
+   -webkit-animation-fill-mode: forwards;
+
+
+
+   animation-duration: 3s;
+
+   -webkit-animation-duration: 3s;
+
+}
+
+@keyframes animatie-gradient {
+
+   0% {
+
+       -webkit-mask-position: 0 100%; /*orizontala + verticala*/
+
+       mask-position: 0 100%;
+
+   }
+
+   100% {
+
+       -webkit-mask-position: 0 0;
+
+       mask-position: 0 0;
+
+   }
+
+}
+#acasa{
+   display: none;
+  }
+.meniu{
+   border-bottom: 1px solid white;
+}
+ ul.meniu{
+    display:none;
+    animation-name:animatie-meniu;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform-origin: 50% 0;
+   
+ }
+
+ #ch-menu:checked~ul.meniu{
+    display:block;
+    
+    z-index: 5;
+
+    position: relative;
+ }
+
+ ul.meniu li{
+    width:100% !important;
+ }
+
+ ul.meniu ul{
+    width: 100%;
+ }
+
+ ul.meniu li:hover ul{
+    animation:none;
+    opacity:1;
+    transform: scale(1,1);
+ }
+
+ @keyframes animatie-meniu{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+        
+    }
+ }

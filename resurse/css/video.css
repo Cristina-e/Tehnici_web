@@ -1,0 +1,31 @@
+::cue {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    
+    position: 70%;
+    top: 50%;
+    left: 50%;
+  }
+
+@media screen and (max-width:1000px){
+  ::cue{
+  font-size: 0.8rem;
+  }
+}
+  
+
+
+
+
+#clip-video{
+  width:50%;
+  --raza-bord:3rem;
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  line-height: 0px;
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "sharp": "^0.31.2"
+  },
+  "name": "magazin-ochelari",
+  "version": "1.0.0",
+  "description": "site pt ochelari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ochelari",
+    "lentile",
+    "de",
+    "contact"
+  ],
+  "author": "cristina",
+  "license": "ISC"
+}

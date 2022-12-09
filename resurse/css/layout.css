@@ -1,0 +1,368 @@
+
+body{
+    --background-body:white;
+    --culoare-text: black;
+    --culoare-main: #EDEDF9;
+    --margin-main: 7%;
+    --padding-main: 10px;
+    background-color: var(--background-body);
+    color:var(--culoare-text);
+}
+ 
+header{
+    background-color: lightgray;
+}
+ 
+main{
+    background-color: var(--culoare-main);
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+}
+ 
+footer{
+    background-color: #6464FB;
+    color: #EDEDF9;
+}
+ 
+#grid-pagina{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    grid-template-areas:"z-chestie-1 z-chestie-1 z-chestie-1 z-chestie-1"
+                        "z-chestie-1 z-chestie-1 z-chestie-1 z-chestie-1"
+                        "z-chestie-3 z-chestie-2 z-chestie-2 z-chestie-4"
+                        "z-chestie-5 z-chestie-2 z-chestie-2 z-chestie-4"
+                        "z-chestie-5 z-chestie-6 z-chestie-6 z-chestie-7"
+                        "z-chestie-8 z-chestie-8 z-chestie-8 z-chestie-8"
+}
+#grid-pagina > *{
+    margin: 0;
+    padding: var(--padding-main);
+}
+main{
+    margin-left:var(--margin-main);
+    margin-right:var(--margin-main);
+}
+ 
+#chestie-1{
+    grid-area:z-chestie-1;
+}
+ 
+#chestie-2{
+    grid-area:z-chestie-2;
+}
+ 
+#chestie-3{
+    grid-area:z-chestie-3;
+}
+ 
+#chestie-4{
+    grid-area:z-chestie-4;
+}
+ 
+#chestie-5{
+    grid-area:z-chestie-5;
+}
+ 
+#chestie-6{
+    grid-area:z-chestie-6;
+}
+ 
+#chestie-7{
+    grid-area:z-chestie-7;
+}
+ 
+#chestie-8{
+    grid-area:z-chestie-8;
+}
+ 
+@media screen and (max-width:750px){
+   
+    #grid-pagina{
+        display: block;
+    }
+    main{
+        margin-left:0;
+        margin-right:0;
+    }
+    #tabel{
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+}
+.taburi-iframe{
+    display: flex;
+    
+}
+iframe{
+    border: 4px solid #6464FB;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.buton-iframe{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.taburi-iframe a{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom:1px;
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:100px;
+    border:2px solid #1212FF;
+    box-shadow: inset 0.6em 0 .4em #6464FB,inset 0.6em 0 .4em #6464FB;
+    text-align: center;
+    text-decoration: none;
+    color: #74747A !important;
+    font-weight: bolder;
+    transition: 1s;
+}
+.taburi-iframe a:hover{
+    background-color: #6464FB;
+    color:#EDEDF9 !important;
+    font-weight: bolder;
+}
+#chestie-1 img{
+    
+    width: 100%;
+    max-height: 92%;
+ margin-top: 30px;
+    
+}
+#chestie-1{
+padding: 0;
+
+}
+#tabel{
+ caption-side: bottom;
+ border-collapse: collapse;
+ width: 100%;
+ table-layout: fixed;
+}
+#tabel caption{
+    background-color:#6464FB;
+    padding: 8px;
+}
+  
+  #tabel td, #tabel th {
+    border: 1px solid white;
+    padding: 8px;
+  }
+  
+.col1{
+    background-color:#6464FB;
+}
+.col2{
+    background-color:#B6B6BF;
+}
+#tabel tr,#tabel td{
+    transition-property:background-color;
+  transition-duration: 3s;
+}
+#tabel tr:hover{
+    background-color: #B6B6BF;
+}
+#tabel td:hover{
+    background-color: #6464FB;
+}
+ #rotund{
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0;
+ }
+  tfoot td{
+    text-align: center;
+  }
+ 
+ 
+  #tabel th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1212FF;
+    color: white;
+  }
+header{
+    margin: 0;
+    padding: 0;
+}
+html, body,#grid-pagina {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  
+  #triunghi{
+    background-color: #6464FB;
+    opacity: 0.5;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #1212FF;
+    align-items: center;
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 2rem;
+    transition: 500ms;
+  }
+  #triunghi a{
+    width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1.5rem 0 0 -1.5rem;
+  }
+  #triunghi a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #triunghi:hover + #text{
+    visibility: visible;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size:0.9rem;
+    border: 0.2em solid #6464FB ;
+    width: 3.5rem;
+    text-align: center;
+    color: #6464FB;
+  }
+  #triunghi:hover{
+    opacity: 1;
+    
+  }
+  #text{
+    visibility: hidden;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    width: 3.5rem;
+    text-align: center;
+    color: white;
+    transition: 500ms;
+  }
+	#watermark,#absolut{
+		display:none;
+	}
+  @media print {
+#chestie-1{
+  display:none;
+}
+#chestie-8{
+  display:none;
+}
+#link{
+  display:none;
+}
+a,a:visited,a:link{
+  color:black;
+  text-decoration: none;
+}
+	#absolut{
+		position: absolute;
+		display: block;
+		top:100%;
+		width: 80%;
+		height:20px;
+		right:0;
+		overflow: visible;
+
+    text-align: center;
+    margin-left: 10%;
+    border: 4px dotted black;
+  }
+
+
+	h1{
+		page-break-after: always;
+		margin-top: 50%;
+		text-align:center;
+		margin-right:32%;
+    font-size: 2.5em;
+    text-decoration: underline;
+	}
+  nav{
+    display:none;
+  }
+  #grid-pagina{
+		font-size: 10px;
+		box-sizing:border-box;
+		page-break-before:always;
+		background-color: white;
+		/*
+			grid-template-rows: calc(100vh - 10px) 100vh 100vh 100vh;*/
+    overflow:visible !important;
+		display:block;
+		}
+		html, body {
+        width: 210mm;
+        /* height: 297mm; */
+        /*height: 282mm;*/
+				overflow:visible !important;
+		}
+	#grid-pag div:nth-child(5){
+		
+		page-break-before:always;
+	}
+
+	
+		#watermark
+		{
+			display: block;
+			position: fixed;/*apare pe toate paginile*/
+			bottom:0;
+			color:rgba(0,0,0,0.4);
+			right:0;
+		}
+		#watermark::after{
+			width: 100px;
+      height: 2cm;
+			opacity:0.65;
+			padding:5px;
+			display: block;
+			background: white;
+			border:5px double black;
+			
+			content:"Copyright Cristina Enciu";
+		}
+
+	footer{
+		page-break-before: always;
+    font-size: 10px;
+		box-sizing:border-box;
+		background-color: white;
+		display:block;
+	}
+}
+
+	@page {
+		size: A4 portrait;
+		margin-bottom:2cm;
+		margin-top:2cm;
+		counter-increment: page;
+			
+	}
+	@page:left{
+
+		margin-left:0.5cm;
+		margin-right:0.5cm;
+		border-radius: 20cm;
+	}
+	@page:right{
+
+		margin-right:2.5cm;
+		margin-left:0.5cm;
+	}
+    
