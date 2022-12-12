@@ -10,13 +10,20 @@
     </head>
     <body>
         <%-include("../fragmente/header.ejs") %>
-        
+        <div id="link">
+            <div id="triunghi"><a href="#">&#5123</a></div>
+            <div id="text">Link top</div>
+        </div>
         <main>
+            
             <div id="grid-pagina">
                 <div id="chestie-1">
                 <!-- 8-->   
-                <img src="resurse/imagini/Glasses.png" alt="ochelari"> 
-                <h2>Galerie</h2>
+                <div id="imagine"></div>
+                <div id="reflexie">
+                <div id="text-normal">Galerie</div>
+                <div id="text-reflectat">Galerie</div>
+                </div>
                 <div id="grid-galerie">
                     <% for (let imag of locals.imagini) {
                     var d=new Date();
@@ -101,7 +108,7 @@
                 <div id="chestie-3">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
                 </div>
-                <!-- /6-->
+
                 <div id="chestie-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident vero voluptas amet odio culpa saepe id asperiores repudiandae ex sint fugiat quam minima qui a eligendi distinctio beatae soluta quia voluptatem nemo, sit quasi, veritatis nostrum! Aliquid nulla non qui dolor facere, quasi eius laboriosam corporis accusantium architecto veritatis!</p>
                 </div>
@@ -139,10 +146,7 @@
                 </div>
             </div>
         </main>
-        <div id="link">
-            <div id="triunghi"><a href="#">&#5123</a></div>
-            <div id="text">Link top</div>
-        </div>
+        
         <%-include("../fragmente/footer.ejs") %>
 
     </body>

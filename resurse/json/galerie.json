@@ -5,39 +5,39 @@
 			"fisier":"ochelari1.jpg",
 			"titlu":"Ochelari 1",
 			"descriere":"Ochelari cu rama transparenta",
-			"sfert_ora":"1"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"ochelari2.jpg",
 			"titlu":"Ochelari 2",
 			"descriere":"Ochelari cu rama aurie",
-			"sfert_ora":"2"
+			"sfert_ora":["1","2","3","4"]
 			
 		},
 		{
 			"fisier":"ochelari3.jpg",
 			"titlu":"Ochelari 3",
 			"descriere":"Ochelari roz",
-			"sfert_ora":"3"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"ochelari4.jpg",
 			"titlu":"Ochelari 4",
 			"descriere":"Ochelari clasici",
-			"sfert_ora":"4"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"ochelari5.jpg",
 			"titlu":"Ochelari 5",
 			"descriere":"Ochelari vintage",
-			"sfert_ora":"1"
+			"sfert_ora":["1","2","3","4"]
 			
 		},
 		{
 			"fisier":"ochelari6.jpg",
 			"titlu":"<a href='https://www.flickr.com/photos/jelles/1802525483/' target='_blank'>Sunglasses by JelleS </a>",
 			"descriere":"<a rel='license' href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>CC BY 2.0</a>",
-			"sfert_ora":"2"
+			"sfert_ora":["1","2","3","4"]
 			
 		
 		},
@@ -45,50 +45,50 @@
 			"fisier":"soare1.jpg",
 			"titlu":"Ochelari de soare 1",
 			"descriere":"Ochelari de soare scumpi",
-			"sfert_ora":"3"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"soare2.jpg",
 			"titlu":"Ochelari de soare 2",
 			"descriere":"Ochelari de soare cool",
-			"sfert_ora":"4"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"soare3.jpg",
 			"titlu":"Ochelari de soare 3",
 			"descriere":"Ochelari de soare basic",
-			"sfert_ora":"1"
+			"sfert_ora":["1","2","3","4"]
 		},
 		
 		{
 			"fisier":"soare4.jpg",
 			"titlu":"Ochelari de soare 4",
 			"descriere":"Ochelari de soare negri",
-			"sfert_ora":"2"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"soare5.jpg",
 			"titlu":"Ochelari de soare 5",
 			"descriere":"Ochelari de soare model futurist",
-			"sfert_ora":"3"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"soare6.jpg",
 			"titlu":"Ochelari de soare 6",
 			"descriere":"Ochelari de soare lentila roz",
-			"sfert_ora":"4"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"lentile_contact1.jpg",
 			"titlu":"Lentile contact 1",
 			"descriere":"Lentile de contact.",
-			"sfert_ora":"1"
+			"sfert_ora":["1","2","3","4"]
 		},
 		{
 			"fisier":"lentile_contact2.jpg",
 			"titlu":"Lentile contact 2",
 			"descriere":"Lentile de contact.",
-			"sfert_ora":"2"
+			"sfert_ora":["1","2","3","4"]
 		}
 	]
 }

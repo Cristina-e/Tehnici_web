@@ -127,17 +127,153 @@ iframe{
     color:#EDEDF9 !important;
     font-weight: bolder;
 }
-#chestie-1 img{
-    
-    width: 100%;
-    max-height: 92%;
- margin-top: 30px;
-    
-}
 #chestie-1{
-padding: 0;
+  width: 100%;
+  height: auto;
 
 }
+#imagine{
+	position:relative;
+	background-image:url("../imagini/Glasses.png");
+	padding-bottom: 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-top: 2%;
+	filter:brightness(200%) grayscale(0) ;
+	transition:all 2s linear;
+  border: 4px solid #6464FB;
+}
+
+#imagine:after, #imagine:before{
+	content:" ";
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	transition:all 2s linear;
+}
+
+#imagine:after{
+	background-color:#1212FF;
+	mix-blend-mode:lighten;
+}
+
+#imagine:before{
+	background-color:violet;
+	mix-blend-mode:darken;
+}
+#imagine:hover:after, #imagine:hover:before{
+	content:" ";
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	transition:all 2s linear;
+}
+
+#imagine:hover:after{
+	background-color:#1212FF;
+	mix-blend-mode:lighten;
+}
+
+#imagine:hover:before{
+	background-color:#6464FB;
+	mix-blend-mode:darken;
+}
+#reflexie{
+  display: inline-block;
+  font-size: 3rem;
+  text-align: center;
+}
+#text-normal:before {
+  content:"• ";
+}
+#text-reflectat{
+	transform: rotatex(180deg) translatey(15px) skew(135deg) translatex(30px);
+  width: calc((20px / 0.5) * 9); /*cos(60deg) = 0.5*/
+ 
+  background-image: repeating-linear-gradient(20deg,transparent, black 8px);
+  background-size: 200% 100%;
+  
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+#reflexie:hover >#text-reflectat{
+  
+  animation: slide 3s linear infinite;
+}
+@keyframes slide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+@media only screen and (max-width: 650px) {
+  table#tabel,table#tabeltr{
+    border:none;
+    padding:0;
+    margin:0;
+    display:block;
+  }
+  table#tabel td{
+    display:block;
+    padding:0.2em;
+    box-sizing:border-box; /*ca sa imi includa si paddingul in width;*/
+  }
+  table#tabel thead{
+    display:none;
+  }
+  table#tabel tbody td:nth-child(1)::before{
+    content:"Oras: ";
+  }
+  table#tabel tbody td:nth-child(2)::before{
+    content:"Adresa: ";
+  }
+  table#tabel tbody td:nth-child(3)::before{
+    content:"Program: ";
+  }
+  table#tabel tbody td:nth-child(4)::before{
+    content:"Ora: ";
+  }
+  table#tabel tbody td:nth-child(5)::before{
+    content:"Contact: ";
+  }
+ 
+  
+  table#tabel td{
+    border-bottom:none;
+    border-top:none;
+    float:left;
+    width:105%;
+    padding-left:0.5%;
+    padding-right:0;
+  }
+  table#tabel td::before{
+    float:left;
+    width:40%;
+    background:#6464FB;
+    font-weight:bold;
+    margin-right:1em;
+    padding:0.1em;
+    line-height:100%;
+  }
+  table#tabel td:last-child{
+    border-bottom:1px dashed grey;
+  }
+  table#tabel tr:first-child  td:first-child{
+    border-top:1px solid black;
+  }
+  table#tabel tr:last-child td:last-child{
+    border-bottom:1px solid black;
+  }
+}
+@media only screen and (min-width: 650px) {
 #tabel{
  caption-side: bottom;
  border-collapse: collapse;
@@ -187,6 +323,7 @@ padding: 0;
     background-color: #1212FF;
     color: white;
   }
+}
 header{
     margin: 0;
     padding: 0;
@@ -197,7 +334,10 @@ html, body,#grid-pagina {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
   }
-
+#link{
+  position: fixed;
+  bottom: 0;
+}
   
   #triunghi{
     background-color: #6464FB;
