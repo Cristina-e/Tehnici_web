@@ -334,8 +334,7 @@ a,a:visited,a:link{
 			display: block;
 			background: white;
 			border:5px double black;
-			
-			content:"Copyright Cristina Enciu";
+      content:"Copyright Cristina Enciu";
 		}
 
 	footer{
